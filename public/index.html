@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blookgle</title>
+    <meta name="description" content="Blookgle — a lightweight Google Programmable Search engine." />
+    <link rel="icon" href="./site-logo.webp" type="image/webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav class="topnav" aria-label="External links">
+      <a href="https://www.blooket.com/" target="_blank" rel="noopener">Blooket</a>
+      <a href="https://blooket.fandom.com/" target="_blank" rel="noopener">Blooket Wiki</a>
+      <a href="https://hippowatermelon.github.io/blooket4free/" target="_blank" rel="noopener">Blooket4Free</a>
+    </nav>
+    <main class="page">
+      <header class="brand">
+        <h1 class="logo" aria-label="Blookgle"><img class="brand-logo" src="./blooket-logo.png" alt="Blooket" /></h1>
+        <p class="tagline">Search the web, Blookgle style</p>
+      </header>
+
+      <section class="search-card" aria-label="Search">
+        <!-- Base code provided by user -->
+        <script async src="https://cse.google.com/cse.js?cx=114c9d7a000fb46fb"></script>
+        <div class="gcse-searchbox-only" data-resultsurl="results.html"></div>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </section>
+
+      <div id="results-wrap"><div class="gcse-searchresults-only"></div></div>
+
+      <footer class="footer">
+        <span>Powered by Google Programmable Search</span>
+      </footer>
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
